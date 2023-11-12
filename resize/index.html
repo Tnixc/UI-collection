@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Resize</title>
+  </head>
+  <body>
+    <main class="bg-pink-100 h-screen flex justify-center fixed inset-0">
+      <div class="flex flex-col bg-black shadow-xl border-8 border-black">
+        <div
+          id="top"
+          class="bg-slate-200 w-full rounded-xl min-h-[8rem] p-8 overflow-scroll"
+        >
+          <h1 class="text-4xl font-bold pb-4">Resize</h1>
+          <div class="flex gap-4">
+            <p class="select-none opacity-25">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus nemo quae cumque maiores aspernatur quidem odit saepe
+              minus, debitis ipsam, nobis et blanditiis praesentium dicta ipsa
+              dolor quaerat error aut hic quos quas illum ab quibusdam eveniet!
+              Vel, dolore qui! Perferendis officiis velit eveniet aliquid
+              accusamus doloribus dolorem ex sunt!
+            </p>
+            <p class="select-none opacity-25">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus nemo quae cumque maiores aspernatur quidem odit saepe
+              minus, debitis ipsam, nobis et blanditiis praesentium dicta ipsa
+              dolor quaerat error aut hic quos quas illum ab quibusdam eveniet!
+              Vel, dolore qui! Perferendis officiis velit eveniet aliquid
+              accusamus doloribus dolorem ex sunt!
+            </p>
+            <p class="select-none opacity-25">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus nemo quae cumque maiores aspernatur quidem odit saepe
+              minus, debitis ipsam, nobis et blanditiis praesentium dicta ipsa
+              dolor quaerat error aut hic quos quas illum ab quibusdam eveniet!
+              Vel, dolore qui! Perferendis officiis velit eveniet aliquid
+              accusamus doloribus dolorem ex sunt!
+            </p>
+          </div>
+        </div>
+        <div
+          id="divider"
+          onmousedown="startDragging(event)"
+          class="h-8 bg-black flex items-center justify-center cursor-row-resize"
+        >
+          <div class="h-1 w-12 bg-slate-400 rounded-full"></div>
+        </div>
+        <div
+          class="bg-slate-200 flex-grow w-full rounded-xl min-h-[6rem]"
+        ></div>
+      </div>
+    </main>
+  </body>
+  <script>
+    let isDragging = false;
+
+    function startDragging(e) {
+      isDragging = true;
+
+      if (e.type === "mousedown") {
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", stopDragging);
+      } else if (e.type === "touchstart") {
+        document.addEventListener("touchmove", handleTouchMove);
+        document.addEventListener("touchend", stopDragging);
+      }
+    }
+
+    function stopDragging() {
+      isDragging = false;
+
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("touchmove", handleTouchMove);
+    }
+
+    function handleMouseMove(e) {
+      if (isDragging) {
+        const top = document.getElementById("top");
+        const topHeight = window.pageYOffset + top.getBoundingClientRect().top;
+        top.style.height = e.clientY - topHeight + "px";
+      }
+    }
+
+    function handleTouchMove(e) {
+      if (isDragging && e.touches.length === 1) {
+        e.preventDefault(); // Prevent scrolling on touch devices
+
+        const top = document.getElementById("top");
+        const topHeight = window.pageYOffset + top.getBoundingClientRect().top;
+        top.style.height = e.touches[0].clientY - topHeight + "px";
+      }
+    }
+
+    // Attach event listeners
+    const draggableDiv = document.getElementById("divider");
+    draggableDiv.addEventListener("mousedown", startDragging);
+    draggableDiv.addEventListener("touchstart", startDragging);
+  </script>
+</html>
