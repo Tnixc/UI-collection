@@ -9,3 +9,12 @@ Inspiration: https://x.com/AetherAurelia/status/1638858062596374528?s=20
 
 https://github.com/Tnixc/UI-collection/assets/85466117/f7dcdaad-6d2a-4aff-89ff-0f36cfb5106d
 
+# Resize
+
+Wow this is even jankier than the last one. Touch screen stuff is hard man.
+
+Inspiration: https://x.com/raffichill/status/1723000456593453133?s=46&t=0RlBdpZcsyLus0MZ55Xs1w
+
+https://github.com/Tnixc/UI-collection/assets/85466117/99744ec0-9006-4f8f-9a33-273d1ab2740f
+
+
