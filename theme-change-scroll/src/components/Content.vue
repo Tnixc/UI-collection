@@ -1,93 +1,153 @@
 <template>
-  <div class="h-full p-10 rounded-xl bg-base text-text">
+  <div class="h-full rounded-xl bg-base text-text">
     <div class="flex items-center justify-between">
-      <h1 class="text-4xl">Latte</h1>
-      <h1 class="text-4xl">Frappe</h1>
-      <h1 class="text-4xl">Mocchiato</h1>
-      <h1 class="text-4xl">Mocha</h1>
+      <h1 class="text-4xl text-center w-full flex-grow p-4">Latte</h1>
+      <h1 class="text-4xl text-center w-full flex-grow p-4">Frappe</h1>
+      <h1 class="text-4xl text-center w-full flex-grow p-4">Mocchiato</h1>
+      <h1 class="text-4xl text-center w-full flex-grow p-4">Mocha</h1>
     </div>
-    <p class="text-text py-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-      voluptatum.
-    </p>
-    <div class="flex h-10">
-      <div class="w-20 h-full bg-crust"></div>
-      <div class="w-20 h-full bg-mantle"></div>
-      <div class="w-20 h-full bg-base"></div>
-      <div class="w-20 h-full bg-surface0"></div>
-      <div class="w-20 h-full bg-surface1"></div>
-      <div class="w-20 h-full bg-surface2"></div>
-      <div class="w-20 h-full bg-overlay0"></div>
-      <div class="w-20 h-full bg-overlay1"></div>
-      <div class="w-20 h-full bg-overlay2"></div>
-      <div class="w-20 h-full bg-subtext0"></div>
-      <div class="w-20 h-full bg-subtext1"></div>
-      <div class="w-20 h-full bg-text"></div>
+    <div class="flex h-[500px]">
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-crust"></div>
+        <div class="flex-grow rounded-sm bg-mantle"></div>
+        <div class="flex-grow rounded-sm bg-base"></div>
+        <div class="flex-grow rounded-sm bg-surface0"></div>
+        <div class="flex-grow rounded-sm bg-surface1"></div>
+        <div class="flex-grow rounded-sm bg-surface2"></div>
+        <div class="flex-grow rounded-sm bg-overlay0"></div>
+        <div class="flex-grow rounded-sm bg-overlay1"></div>
+        <div class="flex-grow rounded-sm bg-overlay2"></div>
+        <div class="flex-grow rounded-sm bg-subtext0"></div>
+        <div class="flex-grow rounded-sm bg-subtext1"></div>
+        <div class="flex-grow rounded-sm bg-text"></div>
+      </div>
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-rosewater"></div>
+        <div class="flex-grow rounded-sm bg-flamingo"></div>
+        <div class="flex-grow rounded-sm bg-pink"></div>
+        <div class="flex-grow rounded-sm bg-mauve"></div>
+        <div class="flex-grow rounded-sm bg-red"></div>
+        <div class="flex-grow rounded-sm bg-maroon"></div>
+        <div class="flex-grow rounded-sm bg-peach"></div>
+        <div class="flex-grow rounded-sm bg-yellow"></div>
+        <div class="flex-grow rounded-sm bg-green"></div>
+        <div class="flex-grow rounded-sm bg-teal"></div>
+        <div class="flex-grow rounded-sm bg-sky"></div>
+        <div class="flex-grow rounded-sm bg-sapphire"></div>
+        <div class="flex-grow rounded-sm bg-blue"></div>
+        <div class="flex-grow rounded-sm bg-lavender"></div>
+      </div>
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-crust"></div>
+        <div class="flex-grow rounded-sm bg-mantle"></div>
+        <div class="flex-grow rounded-sm bg-base"></div>
+        <div class="flex-grow rounded-sm bg-surface0"></div>
+        <div class="flex-grow rounded-sm bg-surface1"></div>
+        <div class="flex-grow rounded-sm bg-surface2"></div>
+        <div class="flex-grow rounded-sm bg-overlay0"></div>
+        <div class="flex-grow rounded-sm bg-overlay1"></div>
+        <div class="flex-grow rounded-sm bg-overlay2"></div>
+        <div class="flex-grow rounded-sm bg-subtext0"></div>
+        <div class="flex-grow rounded-sm bg-subtext1"></div>
+        <div class="flex-grow rounded-sm bg-text"></div>
+      </div>
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-rosewater"></div>
+        <div class="flex-grow rounded-sm bg-flamingo"></div>
+        <div class="flex-grow rounded-sm bg-pink"></div>
+        <div class="flex-grow rounded-sm bg-mauve"></div>
+        <div class="flex-grow rounded-sm bg-red"></div>
+        <div class="flex-grow rounded-sm bg-maroon"></div>
+        <div class="flex-grow rounded-sm bg-peach"></div>
+        <div class="flex-grow rounded-sm bg-yellow"></div>
+        <div class="flex-grow rounded-sm bg-green"></div>
+        <div class="flex-grow rounded-sm bg-teal"></div>
+        <div class="flex-grow rounded-sm bg-sky"></div>
+        <div class="flex-grow rounded-sm bg-sapphire"></div>
+        <div class="flex-grow rounded-sm bg-blue"></div>
+        <div class="flex-grow rounded-sm bg-lavender"></div>
+      </div>
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-crust"></div>
+        <div class="flex-grow rounded-sm bg-mantle"></div>
+        <div class="flex-grow rounded-sm bg-base"></div>
+        <div class="flex-grow rounded-sm bg-surface0"></div>
+        <div class="flex-grow rounded-sm bg-surface1"></div>
+        <div class="flex-grow rounded-sm bg-surface2"></div>
+        <div class="flex-grow rounded-sm bg-overlay0"></div>
+        <div class="flex-grow rounded-sm bg-overlay1"></div>
+        <div class="flex-grow rounded-sm bg-overlay2"></div>
+        <div class="flex-grow rounded-sm bg-subtext0"></div>
+        <div class="flex-grow rounded-sm bg-subtext1"></div>
+        <div class="flex-grow rounded-sm bg-text"></div>
+      </div>
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-rosewater"></div>
+        <div class="flex-grow rounded-sm bg-flamingo"></div>
+        <div class="flex-grow rounded-sm bg-pink"></div>
+        <div class="flex-grow rounded-sm bg-mauve"></div>
+        <div class="flex-grow rounded-sm bg-red"></div>
+        <div class="flex-grow rounded-sm bg-maroon"></div>
+        <div class="flex-grow rounded-sm bg-peach"></div>
+        <div class="flex-grow rounded-sm bg-yellow"></div>
+        <div class="flex-grow rounded-sm bg-green"></div>
+        <div class="flex-grow rounded-sm bg-teal"></div>
+        <div class="flex-grow rounded-sm bg-sky"></div>
+        <div class="flex-grow rounded-sm bg-sapphire"></div>
+        <div class="flex-grow rounded-sm bg-blue"></div>
+        <div class="flex-grow rounded-sm bg-lavender"></div>
+      </div>
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-crust"></div>
+        <div class="flex-grow rounded-sm bg-mantle"></div>
+        <div class="flex-grow rounded-sm bg-base"></div>
+        <div class="flex-grow rounded-sm bg-surface0"></div>
+        <div class="flex-grow rounded-sm bg-surface1"></div>
+        <div class="flex-grow rounded-sm bg-surface2"></div>
+        <div class="flex-grow rounded-sm bg-overlay0"></div>
+        <div class="flex-grow rounded-sm bg-overlay1"></div>
+        <div class="flex-grow rounded-sm bg-overlay2"></div>
+        <div class="flex-grow rounded-sm bg-subtext0"></div>
+        <div class="flex-grow rounded-sm bg-subtext1"></div>
+        <div class="flex-grow rounded-sm bg-text"></div>
+      </div>
+      <div class="flex flex-col gap-1 flex-grow p-5">
+        <div class="flex-grow rounded-sm bg-rosewater"></div>
+        <div class="flex-grow rounded-sm bg-flamingo"></div>
+        <div class="flex-grow rounded-sm bg-pink"></div>
+        <div class="flex-grow rounded-sm bg-mauve"></div>
+        <div class="flex-grow rounded-sm bg-red"></div>
+        <div class="flex-grow rounded-sm bg-maroon"></div>
+        <div class="flex-grow rounded-sm bg-peach"></div>
+        <div class="flex-grow rounded-sm bg-yellow"></div>
+        <div class="flex-grow rounded-sm bg-green"></div>
+        <div class="flex-grow rounded-sm bg-teal"></div>
+        <div class="flex-grow rounded-sm bg-sky"></div>
+        <div class="flex-grow rounded-sm bg-sapphire"></div>
+        <div class="flex-grow rounded-sm bg-blue"></div>
+        <div class="flex-grow rounded-sm bg-lavender"></div>
+      </div>
     </div>
-    <br />
-    <div class="flex h-10">
-      <div class="w-20 h-full bg-rosewater"></div>
-      <div class="w-20 h-full bg-flamingo"></div>
-      <div class="w-20 h-full bg-pink"></div>
-      <div class="w-20 h-full bg-mauve"></div>
-      <div class="w-20 h-full bg-red"></div>
-      <div class="w-20 h-full bg-maroon"></div>
-      <div class="w-20 h-full bg-peach"></div>
-      <div class="w-20 h-full bg-yellow"></div>
-      <div class="w-20 h-full bg-green"></div>
-      <div class="w-20 h-full bg-teal"></div>
-      <div class="w-20 h-full bg-sky"></div>
-      <div class="w-20 h-full bg-sapphire"></div>
-      <div class="w-20 h-full bg-blue"></div>
-      <div class="w-20 h-full bg-lavender"></div>
-    </div>
-    <br />
-    <div class="flex gap-6">
+    <p class="p-10 py-1 bg-gradient-to-t from-base to-text inline-block text-transparent bg-clip-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus labore excepturi harum architecto ducimus fugit maiores repudiandae perspiciatis beatae culpa magni ea eos, ratione nemo, dolore amet, dignissimos ipsam qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate iure saepe vitae quod similique eos error alias, recusandae accusamus labore perferendis voluptatem consectetur assumenda sint illo commodi repudiandae odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum, harum nemo quaerat quidem necessitatibus voluptas suscipit unde nobis culpa?</p>
+  </div>
+</template>
+<!-- 
+      <div class="flex gap-6">
       <div
         class="flex-grow h-20 ring-2 rounded-xl ring-red bg-red/10 flex items-center p-6">
-        <p class="tex-red text-lg">Something dangerous?</p>
+        <p class="text-red text-lg">Something dangerous?</p>
       </div>
       <div
+      class="flex-grow h-20 ring-2 rounded-xl ring-peach bg-peach/10 flex items-center p-6">
+      <p class="text-peach text-lg">Be careful?</p>
+    </div>
+      <div
         class="flex-grow h-20 ring-2 rounded-xl ring-mauve bg-mauve/10 flex items-center p-6">
-        <p class="tex-mauve text-lg">Something mauve</p>
+        <p class="text-mauve text-lg">Something intersting?</p>
       </div>
       <div
         class="flex-grow h-20 ring-2 rounded-xl ring-green bg-green/10 flex items-center p-6">
-        <p class="tex-green text-lg">Something good?</p>
+        <p class="text-green text-lg">Something good?</p>
       </div>
     </div>
-    <p class="text-3xl py-10">We have something like 250 ports.</p>
-    <div class="flex">
-      <div class="flex flex-col h-20">
-        <div class="h-full bg-crust"></div>
-        <div class="h-full bg-mantle"></div>
-        <div class="h-full bg-base"></div>
-        <div class="h-full bg-surface0"></div>
-        <div class="h-full bg-surface1"></div>
-        <div class="h-full bg-surface2"></div>
-        <div class="h-full bg-overlay0"></div>
-        <div class="h-full bg-overlay1"></div>
-        <div class="h-full bg-overlay2"></div>
-        <div class="h-full bg-subtext0"></div>
-        <div class="h-full bg-subtext1"></div>
-        <div class="h-full bg-text"></div>
-      </div>
-      <div class="flex flex-col h-30">
-        <div class="h-full bg-rosewater"></div>
-        <div class="h-full bg-flamingo"></div>
-        <div class="h-full bg-pink"></div>
-        <div class="h-full bg-mauve"></div>
-        <div class="h-full bg-red"></div>
-        <div class="h-full bg-maroon"></div>
-        <div class="h-full bg-peach"></div>
-        <div class="h-full bg-yellow"></div>
-        <div class="h-full bg-green"></div>
-        <div class="h-full bg-teal"></div>
-        <div class="h-full bg-sky"></div>
-        <div class="h-full bg-sapphire"></div>
-        <div class="h-full bg-blue"></div>
-        <div class="h-full bg-lavender"></div>
-      </div>
-    </div>
-  </div>
-</template>
+ -->
