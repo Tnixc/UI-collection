@@ -11,6 +11,7 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "@catppuccin/tailwindcss": "^0.1.6",
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
