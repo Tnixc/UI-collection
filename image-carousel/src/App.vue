@@ -13,6 +13,7 @@ export default {
 
     // Method to go to the previous panel
     const goToPrevious = () => {
+      handleFlickingChange({ index: index.value - 1 })
       if (flicking.value) {
         (flicking.value as any).prev();
       }
@@ -20,6 +21,7 @@ export default {
 
     // Method to go to the next panel
     const goToNext = () => {
+      handleFlickingChange({ index: index.value + 1 })
       if (flicking.value) {
         (flicking.value as any).next();
       }
@@ -27,10 +29,8 @@ export default {
 
     // Callback function for the Flicking change event
     const handleFlickingChange = (event) => {
-      if (event && event.index !== undefined) {
         console.log('Current Index:', event.index);
         index.value = event.index;
-      }
     };
 
     return {
@@ -57,7 +57,6 @@ export default {
       }"
       :viewportTag="'div'"
       :cameraTag="'div'"
-      @change="handleFlickingChange"
     >
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
@@ -112,7 +111,7 @@ export default {
       <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center" @click="goToPrevious">
         ←
       </button>
-      <span class="text-2xl">Current index</span><span ></span>
+      <span class="text-2xl">Current index {{ index }}</span>
       <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center " @click="goToNext">
         →
       </button>
