@@ -21,10 +21,16 @@ export default {
           src="./assets/1.png"
           alt=""
           draggable="false" />
-        <div class="absolute inset-10 p-10 bg-red-400/30 flex items-end">
-          <div class="w-fit bg-teal-400/30 p-10">
+        <div class="absolute inset-10 p-10 flex items-end">
+          <div
+            class="w-fit bg-zinc-800/30 backdrop-blur-lg rounded-lg ring-2 ring-zinc-50/30 p-10">
             <h1 class="text-4xl font-bold text-white">Flicking</h1>
-            <p class="text-xl text-white">A flexible, customizable, touch-friendly carousel for Vue3</p>
+            <p class="text-xl text-zinc-300 py-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+              sit soluta commodi et labore non! Veniam at voluptate porro
+              delectus harum sit? Vero necessitatibus dicta labore quia
+              temporibus, ex exercitationem.
+            </p>
           </div>
         </div>
       </div>
@@ -34,6 +40,18 @@ export default {
           src="./assets/2.png"
           alt=""
           draggable="false" />
+          <div class="absolute inset-10 p-10 flex items-end">
+            <div
+              class="w-fit bg-zinc-800/30 backdrop-blur-lg rounded-lg ring-2 ring-zinc-50/30 p-10">
+              <h1 class="text-4xl font-bold text-white">Flicking</h1>
+              <p class="text-xl text-zinc-300 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+                sit soluta commodi et labore non! Veniam at voluptate porro
+                delectus harum sit? Vero necessitatibus dicta labore quia
+                temporibus, ex exercitationem.
+              </p>
+            </div>
+          </div>
       </div>
       <div class="h-full flex items-center justify-center relative">
         <img
@@ -41,6 +59,12 @@ export default {
           src="./assets/3.png"
           alt=""
           draggable="false" />
+          <div class="absolute inset-10 p-10 flex items-end">
+            <div
+              class="w-fit bg-zinc-800/30 backdrop-blur-lg rounded-lg ring-2 ring-zinc-50/30 p-10">
+              <h1 class="text-4xl font-bold text-white">Image 3</h1>
+            </div>
+          </div>
       </div>
       <div class="h-full flex items-center justify-center relative">
         <img
@@ -67,15 +91,22 @@ export default {
   </body>
 </template>
 <style>
-#Flicking::after{
+#Flicking::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #f5f5f54a, #F5F5F500,#F5F5F500, #F5F5F500, #F5F5F54a);
+  background: linear-gradient(
+    to right,
+    #f5f5f54a,
+    #f5f5f500,
+    #f5f5f500,
+    #f5f5f500,
+    #f5f5f54a
+  );
   z-index: 9;
   opacity: 20%;
 }
-#Flicking::before{
+#Flicking::before {
   content: "";
   position: absolute;
   inset: 0;
