@@ -8,7 +8,7 @@ export default {
 };
 </script>
 <template>
-  <body class="h-screen flex items-center justify-center bg-neutral-100 p-20">
+  <body class="h-[98vh] flex items-center justify-center bg-neutral-100 p-20">
     <Flicking
       class="rounded-3xl h-full shadow-inner bg-gradient-to-br from-neutral-200 to-neutral-300 ring-4 ring-zinc-50 relative"
       id="Flicking"
@@ -89,6 +89,7 @@ export default {
       </div>
     </Flicking>
   </body>
+  <a href="https://www.behance.net/gallery/184542573/PimBank-UXUI-Design?tracking_source=search_projects&l=1">Image sources: https://www.behance.net/gallery/184542573/PimBank-UXUI-Design?tracking_source=search_projects&l=1</a>
 </template>
 <style>
 #Flicking::after {
