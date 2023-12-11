@@ -12,12 +12,12 @@ export default {
     const flicking = ref(null);
     const goToPrevious = () => {
       if (flicking.value) {
-        flicking.value.prev();
+        (flicking.value as any).prev();
       }
     };
     const goToNext = () => {
       if (flicking.value) {
-        flicking.value.next();
+        (flicking.value as any).next();
       }
     };
 
@@ -94,12 +94,12 @@ export default {
       </div>
     </Flicking>
     <div class="flex items-center justify-center gap-3 p-4">
-      <button class="rounded-lg bg-zinc-200 p-4 text-4xl" @click="goToPrevious">
-        ◀
+      <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center" @click="goToPrevious">
+        ←
       </button>
       <span class="text-2xl">Current index</span><span></span>
-      <button class="rounded-lg bg-zinc-200 p-4 text-4xl" @click="goToNext">
-        ▶
+      <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center " @click="goToNext">
+        →
       </button>
     </div>
   </body>
@@ -131,7 +131,7 @@ export default {
   inset: 0;
   box-shadow: inset 0 0 0 7px #f5f5f54a;
   z-index: 99;
-  @apply rounded-3xl;
+  border-radius: 1.5rem;
 }
 @keyframes widen {
   0% {
