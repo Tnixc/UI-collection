@@ -6,6 +6,8 @@ export default {
     Flicking,
   },
 };
+// Mounted:
+
 </script>
 <template>
   <body
@@ -69,6 +71,11 @@ export default {
         />
       </div>
     </Flicking>
+    <div class="flex gap-3 items-center justify-center p-4">
+      <button class="p-4 bg-zinc-200 rounded-lg text-4xl">◀</button>
+      <span class="text-2xl">Current index</span><span></span>
+      <button class="p-4 bg-zinc-200 rounded-lg text-4xl">▶</button>
+    </div>
   </body>
   <a
     href="https://www.behance.net/gallery/184542573/PimBank-UXUI-Design?tracking_source=search_projects&l=1"
