@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@catppuccin/tailwindcss": "^0.1.6",
+    "@egjs/vue3-flicking": "^4.11.1",
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
