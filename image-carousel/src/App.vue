@@ -1,19 +1,41 @@
 <script lang="ts">
+import { ref } from "vue";
+import "@egjs/vue3-flicking/dist/flicking.css";
 import Flicking from "@egjs/vue3-flicking";
-import "@egjs/flicking/dist/flicking.css";
+
 export default {
+  name: "YourComponent",
   components: {
     Flicking,
   },
-};
-// Mounted:
+  setup() {
+    const flicking = ref(null);
+    const goToPrevious = () => {
+      if (flicking.value) {
+        flicking.value.prev();
+      }
+    };
+    const goToNext = () => {
+      if (flicking.value) {
+        flicking.value.next();
+      }
+    };
 
+    return {
+      flicking,
+      goToPrevious,
+      goToNext,
+    };
+  },
+};
 </script>
+
 <template>
   <body
     class="flex h-[98vh] flex-col items-center justify-center bg-neutral-100 p-32 pt-10"
   >
     <Flicking
+      ref="flicking"
       class="relative h-full w-full rounded-3xl bg-gradient-to-br from-neutral-200 to-neutral-300 shadow-inner ring-4 ring-zinc-50"
       id="Flicking"
       :options="{
@@ -71,17 +93,17 @@ export default {
         />
       </div>
     </Flicking>
-    <div class="flex gap-3 items-center justify-center p-4">
-      <button class="p-4 bg-zinc-200 rounded-lg text-4xl">◀</button>
+    <div class="flex items-center justify-center gap-3 p-4">
+      <button class="rounded-lg bg-zinc-200 p-4 text-4xl" @click="goToPrevious">
+        ◀
+      </button>
       <span class="text-2xl">Current index</span><span></span>
-      <button class="p-4 bg-zinc-200 rounded-lg text-4xl">▶</button>
+      <button class="rounded-lg bg-zinc-200 p-4 text-4xl" @click="goToNext">
+        ▶
+      </button>
     </div>
   </body>
-  <a
-    href="https://www.behance.net/gallery/184542573/PimBank-UXUI-Design?tracking_source=search_projects&l=1"
-    >Image sources:
-    https://www.behance.net/gallery/184542573/PimBank-UXUI-Design?tracking_source=search_projects&l=1</a
-  >
+  < >Image sources >
 </template>
 <style>
 #Flicking::after {
