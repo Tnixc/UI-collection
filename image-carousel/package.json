@@ -16,6 +16,7 @@
     "@egjs/vue3-flicking": "^4.11.1",
     "autoprefixer": "latest",
     "postcss": "latest",
+    "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "latest",
     "vue": "^3.3.10"
   },

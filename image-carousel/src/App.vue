@@ -9,10 +9,10 @@ export default {
 </script>
 <template>
   <body
-    class="h-[98vh] flex items-center justify-center bg-neutral-100 p-32 pt-10"
+    class="flex h-[98vh] items-center justify-center bg-neutral-100 p-32 pt-10"
   >
     <Flicking
-      class="rounded-3xl h-full shadow-inner bg-gradient-to-br from-neutral-200 to-neutral-300 ring-4 ring-zinc-50 relative w-full"
+      class="relative h-full w-full rounded-3xl bg-gradient-to-br from-neutral-200 to-neutral-300 shadow-inner ring-4 ring-zinc-50"
       id="Flicking"
       :options="{
         circular: true,
@@ -21,49 +21,49 @@ export default {
       :viewportTag="'div'"
       :cameraTag="'div'"
     >
-      <div class="h-full flex items-center justify-center relative max-w-full">
+      <div class="relative flex h-full max-w-full items-center justify-center">
         <img
-          class="max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl"
+          class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/1.png"
           alt=""
           draggable="false"
         />
       </div>
-      <div class="h-full flex items-center justify-center relative max-w-full">
+      <div class="relative flex h-full max-w-full items-center justify-center">
         <img
-          class="max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl"
+          class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/2.png"
           alt=""
           draggable="false"
         />
       </div>
-      <div class="h-full flex items-center justify-center relative max-w-full">
+      <div class="relative flex h-full max-w-full items-center justify-center">
         <img
-          class="max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl"
+          class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/3.png"
           alt=""
           draggable="false"
         />
       </div>
-      <div class="h-full flex items-center justify-center relative max-w-full">
+      <div class="relative flex h-full max-w-full items-center justify-center">
         <img
-          class="max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl"
+          class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/4.png"
           alt=""
           draggable="false"
         />
       </div>
-      <div class="h-full flex items-center justify-center relative max-w-full">
+      <div class="relative flex h-full max-w-full items-center justify-center">
         <img
-          class="max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl"
+          class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/5.png"
           alt=""
           draggable="false"
         />
       </div>
-      <div class="h-full flex items-center justify-center relative max-w-full">
+      <div class="relative flex h-full max-w-full items-center justify-center">
         <img
-          class="max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl"
+          class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/6.png"
           alt=""
           draggable="false"
