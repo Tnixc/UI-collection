@@ -1,30 +1,44 @@
 <script lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 import "@egjs/vue3-flicking/dist/flicking.css";
-import Flicking from "@egjs/vue3-flicking";
+import Flicking from '@egjs/vue3-flicking';
 
 export default {
-  name: "YourComponent",
   components: {
     Flicking,
   },
   setup() {
     const flicking = ref(null);
+    const index = ref(0); // Initialize with the first index
+
+    // Method to go to the previous panel
     const goToPrevious = () => {
       if (flicking.value) {
         (flicking.value as any).prev();
       }
     };
+
+    // Method to go to the next panel
     const goToNext = () => {
       if (flicking.value) {
         (flicking.value as any).next();
       }
     };
 
+    // Callback function for the Flicking change event
+    const handleFlickingChange = (event) => {
+      if (event && event.index !== undefined) {
+        console.log('Current Index:', event.index);
+        index.value = event.index;
+      }
+    };
+
     return {
       flicking,
+      index,
       goToPrevious,
       goToNext,
+      handleFlickingChange,
     };
   },
 };
@@ -43,6 +57,7 @@ export default {
       }"
       :viewportTag="'div'"
       :cameraTag="'div'"
+      @change="handleFlickingChange"
     >
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
@@ -97,7 +112,7 @@ export default {
       <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center" @click="goToPrevious">
         ←
       </button>
-      <span class="text-2xl">Current index</span><span></span>
+      <span class="text-2xl">Current index</span><span ></span>
       <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center " @click="goToNext">
         →
       </button>
