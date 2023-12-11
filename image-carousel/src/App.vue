@@ -1,7 +1,7 @@
 <script lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 import "@egjs/vue3-flicking/dist/flicking.css";
-import Flicking from '@egjs/vue3-flicking';
+import Flicking from "@egjs/vue3-flicking";
 
 export default {
   components: {
@@ -9,35 +9,22 @@ export default {
   },
   setup() {
     const flicking = ref(null);
-    const index = ref(0); // Initialize with the first index
 
-    // Method to go to the previous panel
     const goToPrevious = () => {
       if (flicking.value) {
         (flicking.value as any).prev();
-        handleFlickingChange({ index: index.value - 1 })
       }
     };
-
-    // Method to go to the next panel
     const goToNext = () => {
       if (flicking.value) {
         (flicking.value as any).next();
-        handleFlickingChange({ index: index.value + 1 })
       }
-    };
-
-    // Callback function for the Flicking change event
-    const handleFlickingChange = (event: any) => {
-        index.value = event.index;
     };
 
     return {
       flicking,
-      index,
       goToPrevious,
       goToNext,
-      handleFlickingChange,
     };
   },
 };
@@ -107,11 +94,16 @@ export default {
       </div>
     </Flicking>
     <div class="flex items-center justify-center gap-3 p-4">
-      <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center" @click="goToPrevious">
+      <button
+        class="flex aspect-square items-center rounded-full bg-zinc-200 p-4 text-4xl"
+        @click="goToPrevious"
+      >
         ←
       </button>
-      <span class="text-2xl">Current index {{ index }}</span>
-      <button class="rounded-full bg-zinc-200 p-4 text-4xl aspect-square flex items-center " @click="goToNext">
+      <button
+        class="flex aspect-square items-center rounded-full bg-zinc-200 p-4 text-4xl"
+        @click="goToNext"
+      >
         →
       </button>
     </div>
