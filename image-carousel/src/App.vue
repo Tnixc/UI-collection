@@ -103,7 +103,11 @@ export default {
       </button>
     </div>
   </body>
-  < >Image sources >
+  <a
+    href="https://www.behance.net/gallery/184542573/PimBank-UXUI-Design?tracking_source=search_projects&l=1"
+    >Image sources:
+    https://www.behance.net/gallery/184542573/PimBank-UXUI-Design?tracking_source=search_projects&l=1</a
+  >
 </template>
 <style>
 #Flicking::after {
