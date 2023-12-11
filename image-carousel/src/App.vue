@@ -9,57 +9,64 @@ export default {
 </script>
 <template>
   <body
-    class="flex h-[98vh] items-center justify-center bg-neutral-100 p-32 pt-10">
+    class="flex h-[98vh] flex-col items-center justify-center bg-neutral-100 p-32 pt-10"
+  >
     <Flicking
       class="relative h-full w-full rounded-3xl bg-gradient-to-br from-neutral-200 to-neutral-300 shadow-inner ring-4 ring-zinc-50"
       id="Flicking"
       :options="{
         circular: true,
-        defaultIndex: 1,
       }"
       :viewportTag="'div'"
-      :cameraTag="'div'">
+      :cameraTag="'div'"
+    >
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
           class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/1.png"
           alt=""
-          draggable="false" />
+          draggable="false"
+        />
       </div>
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
           class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/2.png"
           alt=""
-          draggable="false" />
+          draggable="false"
+        />
       </div>
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
           class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/3.png"
           alt=""
-          draggable="false" />
+          draggable="false"
+        />
       </div>
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
           class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/4.png"
           alt=""
-          draggable="false" />
+          draggable="false"
+        />
       </div>
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
           class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/5.png"
           alt=""
-          draggable="false" />
+          draggable="false"
+        />
       </div>
       <div class="relative flex h-full max-w-full items-center justify-center">
         <img
           class="max-h-[90%] max-w-[90%] rounded-2xl shadow-2xl"
           src="./assets/6.png"
           alt=""
-          draggable="false" />
+          draggable="false"
+        />
       </div>
     </Flicking>
   </body>
