@@ -13,23 +13,22 @@ export default {
 
     // Method to go to the previous panel
     const goToPrevious = () => {
-      handleFlickingChange({ index: index.value - 1 })
       if (flicking.value) {
         (flicking.value as any).prev();
+        handleFlickingChange({ index: index.value - 1 })
       }
     };
 
     // Method to go to the next panel
     const goToNext = () => {
-      handleFlickingChange({ index: index.value + 1 })
       if (flicking.value) {
         (flicking.value as any).next();
+        handleFlickingChange({ index: index.value + 1 })
       }
     };
 
     // Callback function for the Flicking change event
-    const handleFlickingChange = (event) => {
-        console.log('Current Index:', event.index);
+    const handleFlickingChange = (event: any) => {
         index.value = event.index;
     };
 
