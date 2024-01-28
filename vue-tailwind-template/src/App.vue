@@ -6,10 +6,13 @@
       <span>black &nbsp;</span>
       <span>quartz</span>
     </h1>
-    <h2 class="text-5xl text-zinc-400 pt-20">
+    <h2 class="text-5xl text-zinc-400 pt-10">
       judge my vow
     </h2>
     <div class="absolute bottom-0 left-28 right-28 h-96" id="gradient"></div>
+    <div class="py-20">
+    <button class="p-5 px-20 font-bold text-2xl rounded-lg">Get started</button>
+  </div>
   </body>
 </template>
 <style>
@@ -37,7 +40,7 @@ span {
   display: inline-block;
   opacity: 0;
   transform: scale(0.9) translateY(0);
-  animation: popup 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: popup 0.7s linear;
   animation-fill-mode: forwards;
   &:nth-child(1) {
     animation-delay: 0.2s;
@@ -61,7 +64,7 @@ span {
   }
 }
 h2 {
-  animation: fade 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fade 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
   opacity: 0;
@@ -69,5 +72,12 @@ h2 {
 #gradient {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   filter: blur(50px);
+}
+button {
+  background-image: linear-gradient(45deg, #fbc2eb 0%, #a6c1ee 100%);
+  animation: popup 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 </style>
